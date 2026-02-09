@@ -1,0 +1,21 @@
+[package]
+name = "cgui_widget_extra"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+dev = [
+    "bevy/dynamic_linking",
+]
+
+[dependencies]
+sickle_math = { path = "crates/sickle_math" }
+sickle_macros = { path = "crates/sickle_macros" }
+
+bevy = { path = "../.." }
+bevy_reflect = { path = "../bevy_reflect" }
+
+[dev-dependencies]
+bevy_ecs = { path = "../bevy_ecs" }
